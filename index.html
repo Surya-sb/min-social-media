@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat & smash</title>
+    <link rel="stylesheet" href="./sorce/style.css" />
+    <link rel="stylesheet" href="./sorce/bootstrap/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav id="navwhole" class="navbar navbar-expand-lg bg-body-tertiary header">
+      <div id="head" class="container-fluid">
+        <a class="navbar-brand" href="#">Chat & Smash</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main container -->
+
+    <section class="container">
+      <div class="loginfo">
+        <h3>Chat & Smash</h3>
+
+        <form onsubmit="vali(event)">
+          <label class="lable" for="floatingInput">User name/Email ID</label>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control input"
+              id="floatingInput"
+              placeholder="name@example.com" />
+            <label for="floatingInput">Email address</label>
+          </div>
+
+          <label class="lable" for="floatingPassword">Passward</label>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control input"
+              id="floatingPassword"
+              placeholder="Password" />
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <a class="btn" href=""> Sign up </a>
+          <input class="btn" type="submit" value="Log in"/>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer navebar">
+      <hr />
+      <a>© 2021 Company, Inc</a>
+      <a>FAQ</a>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+  <script src="./sorce/bootstrap/bootstrap.bundle.min.js"></script>
+</html>

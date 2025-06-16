@@ -1,0 +1,114 @@
+
+* {
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box !important;
+
+}
+
+/* background-image: 
+    url("./img/backimg.png"),
+    linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(211, 255, 231, 1) 100%) !important; */
+
+body {
+  background-color: rgb(255, 255, 255) !important;
+   background-image: url("./img/backimg.png") !important;
+  background-image: 
+    url("./img/backimg.png"),
+    linear-gradient(244deg,rgba(130, 222, 255, 1) 0%, rgba(255, 255, 255, 1) 100%) !important;
+  height: 100%;
+}
+
+/* navbar */
+#navwhole{
+  /* background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(211, 255, 231, 1) 100%) !important; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.415);
+  /* background: linear-gradient(244deg,rgba(130, 222, 255, 1) 0%, rgba(255, 255, 255, 1) 100%); */
+
+  background-color: #8e3232;
+  /* color: #2e7d32; dark green */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}
+#navwhole div a{
+  color: rgb(0, 0, 0) !important;
+}
+
+/* login/signin box */
+.container{
+    background-color: #ffffffdb;
+    position: absolute;
+    width: 400px !important;
+    height: 400px;
+    left: 65%;
+    top: 25%;
+    border: 2px solid rgba(0, 0, 0, 0.108);
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px #0000000f;
+}
+
+
+/* input box content */
+.loginfo input{
+    border-radius: 10px;
+    min-height: 20px !important;
+    height: 45px !important;
+}
+
+.form-floating>label{
+    font-size: 14px;
+    color: rgb(0, 0, 0) !important;
+    padding-top: 8px !important;
+}
+
+.input:focus{
+    border-color: #1d1d1d !important;
+    box-shadow: 0 0 5px rgb(29, 29, 29) !important;
+}
+.form-floating > input:focus + label {
+  color: #0000006b !important;
+}
+
+
+.loginfo>h3{
+    margin-top: 40px;
+    color: black;
+    
+}
+.lable{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+    
+}
+
+/* login/signin box buttons */
+
+.loginfo .btn{
+    background-color: white;
+    margin: 20px;
+    border: 1px solid black;
+}
+.loginfo .btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* footer */
+footer{
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif !important;
+}
+footer>hr{
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0;
+}
+
+.fcon{
+  margin: 10px ;
+}
