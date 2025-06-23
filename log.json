@@ -1,0 +1,83 @@
+{
+    "stories" :[
+        {
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        },{
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        },{
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        },{
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        },{
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        },{
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        },{
+            "name" : "Hello",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "World",
+            "img" : "/sorce/img/profile.jpg"
+        },
+        {
+            "name" : "welcome",
+            "img" : "/sorce/img/profile.jpg"
+        }
+        
+    ]
+}

@@ -1,7 +1,150 @@
-
 * {
-  padding: 0 ;
-  margin: 0 ;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box !important;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: "Jua", sans-serif;
+}
 
+.nav {
+  padding: 10px 0;
+  background: linear-gradient(
+    244deg,
+    rgba(130, 222, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.brand {
+  margin-left: 10px;
+}
+.mid > div > input {
+  width: 100%;
+  height: 35px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.204);
+  font-size: 10px;
+  padding-left: 10px;
+}
+.mid > div > input:focus {
+  outline: none;
+  border-color: rgba(205, 204, 204, 0.807);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.462);
+}
+.mid > div > button {
+  position: absolute;
+  right: 33%;
+  top: 8px;
+  color: rgba(0, 0, 0, 0.268);
+}
+
+div > ul {
+  display: flex;
+  justify-content: end;
+}
+
+.li {
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, 0.142);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+.li > a {
+  color: rgba(0, 0, 0, 0.518);
+  font-size: 20px;
+}
+
+/* main all section  */
+
+#stories {
+  height: 85px;
+  width: 650px;
+  background-color: rgba(101, 100, 100, 0.403);
+  margin-top: 50px;
+}
+/* stories corosal */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+/* carousel-div */
+.carousel-div{
+  height: 58px;
+}
+/* carousel imgs */
+.carousel-item-info {
+  height: 50px;
+  width: 50px;
+  /* flex-shrink: 0; */
+  /* scroll-snap-align: start; */
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+/* carousel-user name */
+.carousel-user{
+  overflow: hidden;
+  
+}
+.pr-btn {
+  position: absolute;
+  top: 10%;
+  background: rgba(0, 0, 0, 0.248);
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 30px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+.prev {
+  left: 4px;
+}
+.next {
+  left: 661px;
+}
+
+/* messages all section */
+#messages {
+  height: 350px;
+  width: 650px;
+  background-color: yellow;
+}
+
+/* frnds section */
+#frnds {
+  height: 175px;
+  width: 650px;
+  background-color: blue;
+}
+
+/* feed section */
+#feed {
+  position: absolute;
+  /* display: ; */
+  height: 685px;
+  width: 800px;
+  background-color: green;
+  left: 700px;
+  top: 50px;
+  overflow: auto;
+}
+
+.sid {
+  margin: 20px;
+  border-radius: 10px;
 }

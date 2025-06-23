@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- css -->
     <link rel="stylesheet" href="./sorce/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/sorce/home.css">
+    <link rel="stylesheet" href="/sorce/home.css" />
     <title>Home page</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="nav row g-0">
+      <div class="col-4">
+        <h3 class="brand">Chat & smash</h3>
+      </div>
 
-    <nav class="nav row g-0 ">
-        <div class="col-4">
-            <h3>Chat and smash</h3>
+      <div class="col-4 mid">
+        <div>
+          <input type="text" placeholder="Friends, Groups, Tags..." />
+          <button class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
+      </div>
 
-        <div class="col-4">
-            <input type="text">
-            <button>search</button>
-        </div>
-
-        <div class="col-4">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-
+      <div class="col-4 ul">
+        <ul>
+          <li class="li-1 li">
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li class="li-2 li">
+            <a href=""><i class="fa-solid fa-plus"></i></a>
+          </li>
+          <li class="li-3 li"><a href="">3</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- stories -->
+    <section id="stories" class="sid element">
+      <div class="carousel" id="carousel"></div>
+      <button class="pr-btn prev" onclick="scrollCarousel(-1)"><</button>
+      <button class="pr-btn next" onclick="scrollCarousel(1)">></button>
+    </section>
 
-</body>
+    <!-- messages -->
+    <section id="messages" class="sid element"></section>
+
+    <!-- suggested frnds -->
+    <section id="frnds" class="sid element"></section>
+
+    <!-- main section -->
+    <section id="feed" class="main element">
+      <div id="content" class="card"></div>
+    </section>
+  </body>
 
   <script src="./sorce/bootstrap/bootstrap.bundle.min.js"></script>
-
+  <script src="./home.js"></script>
 </html>

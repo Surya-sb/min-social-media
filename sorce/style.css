@@ -62,7 +62,7 @@ body {
 }
 
 .input:focus{
-    border-color: #1d1d1d !important;
+    border-color: #f70505 !important;
     box-shadow: 0 0 5px rgb(29, 29, 29) !important;
 }
 .form-floating > input:focus + label {
