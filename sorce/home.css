@@ -66,16 +66,35 @@ div > ul {
   height: 85px;
   width: 650px;
   background-color: rgba(101, 100, 100, 0.403);
-  margin-top: 50px;
+  margin-top: 60px;
+  /* overflow: hidden; */
+  /* border: 2px solid rgba(0, 0, 0, 0.182) ; */
+}
+#stories .legend-stories{
+  position: absolute;
+  top: 48px;
+  left: 30px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  letter-spacing: 2px;
 }
 /* stories corosal */
 .carousel {
   display: flex;
-  overflow-x: auto;
   scroll-behavior: smooth;
   gap: 10px;
   padding: 10px;
   scroll-snap-type: x mandatory;
+  overflow: hidden;
+}
+.carousel button{
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -88,20 +107,20 @@ div > ul {
 .carousel-item-info {
   height: 50px;
   width: 50px;
-  /* flex-shrink: 0; */
-  /* scroll-snap-align: start; */
+  /* flex-shrink: 0;
+  scroll-snap-align: start; */
   border-radius: 50%;
   background-size: cover;
   background-position: center;
 }
 /* carousel-user name */
 .carousel-user{
-  overflow: hidden;
+  overflow: hidden; 
   
 }
 .pr-btn {
   position: absolute;
-  top: 10%;
+  top: 12%;
   background: rgba(0, 0, 0, 0.248);
   color: rgb(255, 255, 255);
   border: none;
@@ -122,15 +141,105 @@ div > ul {
 #messages {
   height: 350px;
   width: 650px;
-  background-color: yellow;
+  background-color: rgba(101, 100, 100, 0.403);
+  overflow: hidden;
+
+}
+.msgs{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+.msgs i{
+  color: rgb(50, 132, 255);
+}
+
+/*msg view all */
+.msg{
+  margin: 5px 20px ;
+}
+
+#wholemsg{
+  display: flex;
+}
+
+.profile-sec{
+  width: 70px;
+  border-right: 2px solid ;
+  margin-left: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.profile-sec button{
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+
+}
+
+.profile-div hr{
+  width: 90%;
+  margin: 0;
+  margin-bottom: 5px;
+  height: 2px;
+  background-color: black;
+
+}
+.profile-div .puser-name{
+  margin-bottom: 0px;
+}
+
+.profile-info{
+  height: 45px;
+  width: 45px;
+  background-image: url("/sorce/img/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: auto auto;
+}
+
+.msg-secc{
+opacity:0.5;
+z-index:99;
+color:rgb(5, 5, 5);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.msg-secc>h2{
+  font-size: 50px;
 }
 
 /* frnds section */
 #frnds {
   height: 175px;
   width: 650px;
-  background-color: blue;
+  background-color: rgb(0, 255, 38);
 }
+
+.frndli{
+  position: absolute;
+  bottom: 188px;
+  left: 30px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+
+.frndli i{
+  color: rgb(50, 132, 255);
+}
+
 
 /* feed section */
 #feed {

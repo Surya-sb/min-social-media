@@ -54,16 +54,51 @@
 
     <!-- stories -->
     <section id="stories" class="sid element">
+      <span class="legend-stories">Stories</span>
       <div class="carousel" id="carousel"></div>
-      <button class="pr-btn prev" onclick="scrollCarousel(-1)"><</button>
-      <button class="pr-btn next" onclick="scrollCarousel(1)">></button>
+      <button class="pr-btn prev" onclick="scrollCarousel(-1)">&#11164;</button>
+      <button class="pr-btn next" onclick="scrollCarousel(1)">&#11166;</button>
     </section>
 
     <!-- messages -->
-    <section id="messages" class="sid element"></section>
+    <section id="messages" class="sid element">
+      <span class="legend-quick msgs"> <i>Quick</i> Messages</span>
+      <div class="msg row" id="msg">
+        <div class="col-12  view">
+          <a class="float-end" href="">View >></a>
+        </div>
+        </div>
+
+        <div class="whole-msg-item" id="wholemsg">
+          <!-- msg profile side -->
+          <div id="mprofilesec" class="profile-sec">
+            
+          </div>
+  
+          <!-- profile msg side  -->
+          <div class="msg-secc">
+            <h2>Messages Waiting <br> for U ! </h2>
+          </div>
+
+        </div>
+
+        
+        
+      
+
+
+
+    </section>
 
     <!-- suggested frnds -->
-    <section id="frnds" class="sid element"></section>
+    <section id="frnds" class="sid element">
+      <span class="legend-quick frndli"> <i>Quick</i> Messages</span>
+      <div class="msg row" id="msg">
+        <div class="col-12  view">
+          <a class="float-end" href="">View >></a>
+        </div>
+        </div>
+    </section>
 
     <!-- main section -->
     <section id="feed" class="main element">
@@ -73,4 +108,5 @@
 
   <script src="./sorce/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./home.js"></script>
+
 </html>

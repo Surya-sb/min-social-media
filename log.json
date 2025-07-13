@@ -1,83 +1,78 @@
 {
     "stories" :[
         {
+            "id" :1,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
+            "id" : 2,
             "name" : "World",
             "img" : "/sorce/img/profile.jpg"
         },
         {
+            "id" :3,
             "name" : "welcome",
             "img" : "/sorce/img/profile.jpg"
-        },{
+        },
+
+        {
+            "id" :4,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
+            "id" :5,
             "name" : "World",
             "img" : "/sorce/img/profile.jpg"
         },
         {
+            "id" :6,
             "name" : "welcome",
             "img" : "/sorce/img/profile.jpg"
-        },{
+        },
+
+        {
+            "id" :7,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
-            "name" : "World",
-            "img" : "/sorce/img/profile.jpg"
-        },
-        {
-            "name" : "welcome",
-            "img" : "/sorce/img/profile.jpg"
-        },{
+            "id" :8,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
-            "name" : "World",
-            "img" : "/sorce/img/profile.jpg"
-        },
-        {
-            "name" : "welcome",
-            "img" : "/sorce/img/profile.jpg"
-        },{
+            "id" :9,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
-            "name" : "World",
-            "img" : "/sorce/img/profile.jpg"
-        },
-        {
-            "name" : "welcome",
-            "img" : "/sorce/img/profile.jpg"
-        },{
+            "id" :10,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
-            "name" : "World",
-            "img" : "/sorce/img/profile.jpg"
-        },
-        {
-            "name" : "welcome",
-            "img" : "/sorce/img/profile.jpg"
-        },{
+            "id" :11,
             "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
-            "name" : "World",
+            "id" :12,
+            "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         },
         {
-            "name" : "welcome",
+            "id" :13,
+            "name" : "Hello",
             "img" : "/sorce/img/profile.jpg"
         }
+
+
+
+
+
+
         
     ]
 }

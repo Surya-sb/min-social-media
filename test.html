@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Carousel</title>
+    <link rel="stylesheet" href="./sorce/bootstrap/bootstrap.min.css" />
+
+  
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 30px;
+      background: #f0f0f0;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior:smooth;
+      gap: 10px;
+      padding: 10px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-item {
+      /* min-width: 100%;
+      height: 400px; */
+      height: 100px;
+      width: 100px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 50%;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+
+
+
+    .custom-fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.custom-fieldset .legend {
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  background: white;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+
+/* messages all section */
+#messages {
+  height: 350px;
+  width: 650px;
+  border-radius: 10px;
+  background-color: yellow;
+}
+.msgs{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+.msgs i{
+  color: rgb(50, 132, 255);
+}
+
+
+#frnds {
+  height: 175px;
+  width: 650px;
+  background-color: rgb(0, 255, 38);
+}
+
+.frndli{
+  position: absolute;
+  bottom: 300px;
+  left: 30px;
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  letter-spacing: 2px;
+}
+
+.frndli i{
+  color: rgb(50, 132, 255);
+}
+.iii{
+  width: 70px;
+  margin-left: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.profile-info{
+  height: 50px;
+  width: 50px;
+  background-image: url("/sorce/img/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: auto auto;
+}
+
+.cll{
+  display: none;
+  position: absolute;
+}
+  </style>
+</head>
+<body>
+
+  <div class="carousel-wrapper">
+    <div class="carousel" id="carousel">
+        
+    </div>
+    <button class="nav-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+    <button class="nav-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+</div>
+
+
+
+
+    <!-- messages -->
+    <section id="messages" class="sid element">
+      <span class="legend-quick msgs"> <i>Quick</i> Messages</span>
+
+      <div>
+
+      </div>
+
+
+    </section>
+
+
+<button onclick="cl()">
+  hello
+</button>
+
+<div class="cll">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, provident!
+</div>
+
+        <section id="frnds" class="sid element">
+      <span class="legend-quick frndli"> <i>Quick</i> Messages</span>
+      <div class="msg row" id="msg">
+        <div class="col-12  view">
+          <a class="float-end" href="">View >></a>
+        </div>
+        </div>
+
+        <div class="iii">
+            <div class="profile-div">
+                <div class="pr   ofile-info"></div>
+                <p class="puser-name">jbsa</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script>
+    const carousel = document.getElementById('carousel');
+    const itemWidth = carousel.offsetWidth;
+    
+    function scrollCarousel(direction) {
+        carousel.scrollLeft += direction * itemWidth;
+    }
+    
+    
+    
+    // data fetch for stories
+    
+    fetch("log.json").then((get)=> get.json()).then((got)=>{
+        got.stories.map((i)=>{
+            
+            carousel.innerHTML += `
+            <div>
+                <div class="carousel-item" style="background-image: url('${i.img}')"></div>
+                <p style="text-align: center;">${i.name}</p>
+                </div>`;
+                
+            })
+        })
+
+
+
+const aa = document.querySelector('.cll');
+
+function cl() {
+  aa.style.display = "block";
+}
+
+
+
+
+
+        
+        </script>
+        
+</html>
+
+<!-- <div>
+    <div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+    <p style="text-align: center;">hello</p>
+</div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div>
+<div class="carousel-item" style="background-image: url('/sorce/img/profile.jpg')"></div> -->
