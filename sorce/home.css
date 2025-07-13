@@ -198,7 +198,7 @@ div > ul {
 .profile-info{
   height: 45px;
   width: 45px;
-  background-image: url("/sorce/img/profile.jpg");
+  background-image: url("./sorce/img/profile.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 50%;
