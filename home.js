@@ -1,9 +1,10 @@
 const carousel = document.getElementById("carousel");
-const itemWidth = carousel.offsetWidth;
+const itemWidth = 100;
 const mprofile = document.getElementById("mprofilesec");
 
 function scrollCarousel(direction) {
-  carousel.scrollLeft += direction * itemWidth;
+  carousel.scrollLeft += direction * itemWidth *3;
+  
 }
 
 // data fetch for stories
