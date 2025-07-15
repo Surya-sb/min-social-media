@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +24,7 @@
     <title>Home page</title>
   </head>
   <body>
+    <!-- nave bar section -->
     <nav class="nav row g-0">
       <div class="col-4">
         <h3 class="brand">Chat & smash</h3>
@@ -52,55 +52,61 @@
       </div>
     </nav>
 
-    <!-- stories -->
-    <section id="stories" class="sid element">
-      <span class="legend-stories">Stories</span>
-      <div class="carousel" id="carousel"></div>
-      <button class="pr-btn prev" onclick="scrollCarousel(-1)">&#11164;</button>
-      <button class="pr-btn next" onclick="scrollCarousel(1)">&#11166;</button>
-    </section>
+    <div class="row g-0" id="container">
+      <!-- left side containers -->
+      <div id="left" class="left-side col-5">
+        <!-- story section -->
+        <section id="stories" class="sid element">
+          <span class="legend-stories">Stories</span>
+          <div class="carousel" id="carousel"></div>
+          <button class="pr-btn prev" onclick="scrollCarousel(-1)">
+            &#11164;
+          </button>
+          <button class="pr-btn next" onclick="scrollCarousel(1)">
+            &#11166;
+          </button>
+        </section>
 
-    <!-- messages -->
-    <section id="messages" class="sid element">
-      <span class="legend-quick msgs"> <i>Quick</i> Messages</span>
-      <div class="msg row" id="msg">
-        <div class="col-12  view">
-          <a class="float-end" href="">View >></a>
-        </div>
-        </div>
-
-        <div class="whole-msg-item" id="wholemsg">
-          <!-- msg profile side -->
-          <div id="mprofilesec" class="profile-sec">
-            
-          </div>
-  
-          <!-- profile msg side  -->
-          <div class="msg-secc">
-            <h2>Messages Waiting <br> for U ! </h2>
+        <!-- messages section -->
+        <section id="messages" class="sid element">
+          <span class="legend-quick msgs"> <i>Quick</i> Messages</span>
+          <div class="msg " id="msg">
+            <div class=" view">
+              <a class="float-end" href="">View >></a>
+            </div>
           </div>
 
-        </div>
+          <div class="whole-msg-item" id="wholemsg">
+            <!-- msg profile side -->
+            <div id="mprofilesec" class="profile-sec"></div>
 
-    </section>
+            <!-- profile msg side  -->
+            <div class="msg-secc">
+              <h2>
+                Messages Waiting <br />
+                for U !
+              </h2>
+            </div>
+          </div>
+        </section>
 
-    <!-- suggested frnds -->
-    <section id="frnds" class="sid element">
-      <span class="legend-quick frndli"> <i>Suggested</i> Friends</span>
-      <div class="msg row" id="msg">
-        <div class="col-12  view">
-          <a class="float-end" href="">View >></a>
-        </div>
-        </div>
-    </section>
-
-    <!-- main section -->
-    <section id="feed" class="main element">
-      <div id="content" class="card"></div>
-    </section>
+        <!-- suggested frnds -->
+        <section id="frnds" class="sid element">
+          <span class="legend-quick frndli"> <i>Suggested</i> Friends</span>
+          <div class="msg " id="msg">
+            <div class=" view">
+              <a class="float-end" href="">View >></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="main" class=" col-7">
+        <section id="feed" class="main element">
+          <div id="content" class="card"></div>
+        </section>
+      </div>
+    </div>
   </body>
-
-  <script src="./sorce/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="./home.js"></script>
-
+   <script src="./sorce/bootstrap/bootstrap.bundle.min.js"></script>
+   <script src="./home.js"></script>
 </html>
